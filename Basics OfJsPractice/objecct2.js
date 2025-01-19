@@ -1,0 +1,6 @@
+// ~~~~~~~~~~ Defining a singleton Object~~~~~~~~``
+const student = new Object()// this is a singleton object.....
+const student1 = {} //this is a object literal.......
+
+console.log(student)
+console.log(student1)

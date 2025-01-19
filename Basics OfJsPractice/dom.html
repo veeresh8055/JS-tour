@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+
+    <style>
+        .outer{
+            border: 10px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+        .mid{
+            border: 10px solid rgb(245, 5, 5);
+            padding: 10px;
+        }
+        .inner{
+            border: 10px solid rgb(43, 0, 128);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <h2>Event Bubling and Event Capturing </h2>
+   true => Event capturing 
+   false(default) => Event Bubbling
+   
+   <hr>
+   <hr>
+    <div class="outer">outerDiv
+        <div class="mid">midDiv
+            <div class="inner">
+                innerDiv
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    document.querySelector('.outer').addEventListener("click",()=>{
+        console.log("outer div was clicked ")
+    },true)
+    document.querySelector('.mid').addEventListener("click",()=>{
+        console.log("mid div was clicked...")
+    },true)
+ 
+   document.querySelector('.inner').addEventListener("click",()=>{
+    console.log("inner div was clicked...")
+   },true) 
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!-- // what  is Event Bubling and Event Capturing  in JavaScript -->
+  
+<!-- ~~~~~~~~~~~ Event Bubbling : A propogation module where events are handled from the innermost element to outer most element -->
+<!-- ~~~~~~~~~~~~Event Capturing : A propogation module events arehandled from outermost element to the innermost element -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    *{
+        height: 100%;
+        width: 100%;
+        background-color: #161616;
+    }
+    #topdiv{
+        height: 400px;
+        width: 400px;
+        background-color: antiquewhite;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;         
+    }
+    #middiv{
+        height: 300px;
+        width: 300px;
+        background-color: yellowgreen;
+       display: flex;
+       align-items: center;
+       justify-content: center; 
+    }
+    #innerdiv{
+        height: 200px;
+        width: 200px;
+        background-color: coral;
+       
+    }
+ </style>
+ <body>
+    <div id="topdiv">
+        <div id="middiv">
+            <div id="innerdiv">
+            
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+
+
+    //  ~~~~~~~~~~~~~~~ This is Event Bubling~~~~~~~~~~~`
+    // default it is false in event bubling : it runs inner to outer direction ~
+        // document.getElementById("topdiv").addEventListener
+        // ("click",()=>{
+        //     console.log("Outer div is clicked ...");
+        // })
+        // document.getElementById("middiv").addEventListener
+        // ("click",()=>{
+        //     console.log("midle div is clicked ...");
+        // })
+        // document.getElementById("innerdiv").addEventListener             
+        // ("click",()=>{
+        //     console.log("inner  div is clicked ...");
+        // })
+
+//  ~~~~~~~~~~~~~~~~ Event Capturing ~~~~~~~~~~ 
+    // default it is true in event capturing  : it runs outer  to inner direction ~
+
+
+        document.getElementById("topdiv").addEventListener
+        ("click",()=>{
+            console.log("Outer div is clicked ...");
+        },true)
+        document.getElementById("middiv").addEventListener
+        ("click",()=>{
+            console.log("midle div is clicked ...");
+        },true)
+        document.getElementById("innerdiv").addEventListener
+        ("click",()=>{
+            console.log("inner  div is clicked ...");
+        },true)
+
+
+
+    </script>
+ </body>
+ </html>
