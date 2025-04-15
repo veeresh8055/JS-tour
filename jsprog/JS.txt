@@ -1,0 +1,37 @@
+JS Questions…..
+
+1.what is javascript and where it is commonly used ?
+2.what are template literals in JavaScript?
+ combining of these signs  $,{},``  . we get template literals 
+      Ex : console.log(`Veeresh  score is ${score}`);
+3.what is hoisting and give an example..?
+ calling a function before defining is called hoisting 
+    Mainly there are two types
+1.	Variable hoisting and 
+2.	Function hoisting 
+     Ex :  greet()
+             Function greet(){
+             Console.log(“HI Veereshh..!”)
+              }
+4.difference between let var and const..?
+ var is function scope and 
+      Let and const are braces scope…{//’’’’}
+5.what are the datatypes  available in Javascript ?
+ there are two types in js 
+1.	Primitive datatype     : they are immutable…
+          1.number
+          2.boolean
+          3. string
+          4.undefined
+          5.Bigint
+          6.null
+          7.Symbol
+2.	Non primitive datatype: they are mutable….
+1.array
+2.objects 
+3.function
+6.what is an array in javascript and how do you accessits elements 
+7. difference between == and ===  ?
+8.what is the purpose of the is NaN function  ?
+9. what  is null and undefined ?
+10. explain the use of typeof operator .
