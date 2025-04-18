@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems | IF</title>
+</head>
+<body>
+    <script>
+        // if time is less than 10, you will get a 'Good Morning',otherwise you will get 'GoodDay' Message
+
+    var d = new Date()
+    var time = d.getHours()
+    var min = d.getMinutes()
+    var sec = d.getSeconds()
+
+
+       if (time <=10){
+        document.write('Good Morning...')
+       }
+       else{
+        document.writeln('Good Day...')
+       }
+
+document.writeln('</br>')
+document.writeln('</br>')
+document.writeln('minutes',min)
+document.writeln('seconds',sec)
+</script>
+    
+</body>
+</html>
